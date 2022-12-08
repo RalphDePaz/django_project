@@ -18,7 +18,7 @@
               </tr>
             </thead>
             <tbody>
-                <!-- format if from other table object.fkfield.datafromreferencetable -->
+                <!-- format if from other table   object.fkfield.datafromreferencetable -->
                 <!-- note how to use the if statement below. the value of isActive is either True or False but we want to display "Active" or "Inactive" -->
                 {% for object in object_list %}
               <tr>
@@ -29,6 +29,7 @@
               {% endfor %}
             </tbody>
           </table>
+          {% include 'includes/pagination.html' %}
     </div>
   </div>
 
